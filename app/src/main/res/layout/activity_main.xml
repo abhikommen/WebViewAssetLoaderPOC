@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/cacheButton"
+        android:id="@+id/assetSourceButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Cache WebView"
+        android:text="Asset Source WebView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -21,7 +21,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Without Cache"
-        app:layout_constraintEnd_toEndOf="@+id/cacheButton"
-        app:layout_constraintStart_toStartOf="@+id/cacheButton"
-        app:layout_constraintTop_toBottomOf="@+id/cacheButton" />
+        app:layout_constraintEnd_toEndOf="@+id/assetSourceButton"
+        app:layout_constraintStart_toStartOf="@+id/assetSourceButton"
+        app:layout_constraintTop_toBottomOf="@+id/internalSourceButton" />
+
+    <Button
+        android:id="@+id/internalSourceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Internal Source WebView"
+        app:layout_constraintEnd_toEndOf="@+id/assetSourceButton"
+        app:layout_constraintStart_toStartOf="@+id/assetSourceButton"
+        app:layout_constraintTop_toBottomOf="@+id/assetSourceButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

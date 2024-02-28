@@ -29,10 +29,6 @@
             android:name=".webview.WebViewActivity"
             android:exported="true" />
 
-        <activity
-            android:name=".webview.WebViewActivityTwo"
-            android:exported="true" />
-
     </application>
 
 </manifest>
